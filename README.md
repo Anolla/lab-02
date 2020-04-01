@@ -1,13 +1,28 @@
 # lab-02
 
-For each of the features listed below, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
+- Browse collection of photoes.
 
-Number and name of feature: ________________________________
+Number and name of feature: Feature #1: Display images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2 hours
 
 Start time: 15:00
 
-Finish time: _____
+Finish time: 17:15
 
-Actual time needed to complete: _____
+Actual time needed to complete: about 4 hours.
+
+
+- Filter images so that the use can view only images that match a keyword.
+
+Number and name of feature: Feature #2: Filter images
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 20:30
+
+Finish time: 17:15
+
+Actual time needed to complete: about 4 hours.
+
+

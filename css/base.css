@@ -1,0 +1,32 @@
+* {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
+    text-align: center;
+    /* width: 500px; */
+    margin: 0 auto;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+section {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#photo-template {
+    display: none;
+}
+
+footer {
+    clear: left;
+}
+
+p {
+    padding-left: 8px;
+}
