@@ -29,6 +29,8 @@ $(document).ready(function() {
         $animalClone.find("img").attr("src", this.image_url);
         $animalClone.find("p").text(this.description);
         $animalClone.attr("id", this.title);
+        $animalClone.removeAttr('id');
+        $animalClone.attr('class', this.keyword);
         $('main').append($animalClone);
     };
 
@@ -38,6 +40,7 @@ $(document).ready(function() {
                 let animal = new Image(animalItem);
                 animal.render();
                 animal.list();
+                renderSelection();
             });
         });
     };
@@ -48,9 +51,9 @@ $(document).ready(function() {
 
         if (!uiniqueKey.includes(this.keyword)) {
             uiniqueKey.push(this.keyword)
+                // console.log(this);
             let $newOption = $('<option></option>');
             $('select').append($newOption);
-
             $($newOption).text(this.keyword);
             $($newOption).attr('value', this.keyword);
         }
@@ -58,22 +61,42 @@ $(document).ready(function() {
     }
     console.log(uiniqueKey);
 
-    $('select').on('click', function() {
-        let selection = $(this).val();
-        console.log(selection);
-        if (selection === 'default') {
-            $('main').show();
-        } else {
-            $('main').hide();
-
-            // let valueOfOption = $(this).children("optiosn:selected").val();
-            // console.log(valueOfOption);
-            // $('#' + this.title).show();
-        }
+    // $('main section').each(function() {
+    //    
+    //     if (selection === $(this).attr('class')) {
+    //         $(this).show();
+    //         console.log($(this));
+    //     }
 
 
+    // })
 
-    });
+    // }
+
+    const renderSelection = () =>
+        $('select').change(function() {
+            $('main section').each(function() {
+                if ($(this).attr('class') === $('select').val()) {
+                    $(this).show();
+                }
+                if ($(this).attr('class') !== $('select').val()) {
+                    $(this).hide();
+                }
+            })
+        })
+    renderSelection();
+    // $('select').on('click', function() {
+    //     let selection = $(this).val();
+    //     console.log(selection);
+    //     if (selection === 'default') {
+    //         $('main').show();
+    //     } else {
+    //         $('main').hide();
+    //         // let valueOfOption = $(this).children("optiosn:selected").val();
+    //         // console.log(valueOfOption);
+    //         $('.' + selection).show();
+    //     }
+    // })
 
 
 

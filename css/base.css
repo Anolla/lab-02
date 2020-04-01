@@ -19,6 +19,10 @@ section {
     text-align: center;
 }
 
+#photo-template {
+    display: none;
+}
+
 footer {
     clear: left;
 }
