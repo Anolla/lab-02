@@ -26,3 +26,17 @@ Finish time: 17:15
 Actual time needed to complete: about 4 hours.
 
 
+- clean looking UI so that the photo gallery clearly displays the images in a grid like pattern.
+
+Number and name of feature: Feature #3: Style the application
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 20:30
+
+Finish time: 17:15
+
+Actual time needed to complete: about 4 hours.
+
+
+
