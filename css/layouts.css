@@ -1,0 +1,22 @@
+p {
+    width: 200px;
+    height: 135px;
+}
+
+h2 {
+    width: 200px;
+    height: 30px;
+    margin-top: 50px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin-top: 15px;
+    border: 1px solid thistle;
+    border-radius: 8%;
+}
+
+h1 {
+    padding: 20px;
+}
